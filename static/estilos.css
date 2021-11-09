@@ -48,6 +48,40 @@ rodape li a:hover {
     text-decoration: none;
 }
 
+.social {
+    display: flex;
+    margin-top: 1.5rem;
+  }
+  
+  .social li {
+    height: 2rem;
+    margin-right: 0.5rem;
+    text-align: center;
+    width: 2rem;
+  }
+  
+  .social a {
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
+    height: 2rem;
+    justify-content: center;
+    opacity: 0.5;
+    transition-property: opacity, transform;
+    width: 2rem;
+    will-change: opacity, transform;
+  }
+  
+  .social a:hover {
+    opacity: 1;
+    transform: scale(1.25);
+  }
+  
+  .social a:active {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
 /* Tipografia */
 
 .conteudo p:nth-child(1) {
@@ -75,13 +109,11 @@ rodape li a:hover {
 .conteudo {
 	line-height: 0px;
 	margin: 45px 0px 25px;
-}
-
-.conteudo {
-	position: absolute;
+    position: absolute;
 	left: 13%;
 	top: 42%;
 	transform: translate(-13%, -42%);
+
 }
 
 .conteudo button {
@@ -445,8 +477,8 @@ input[type=submit] {
     }
     
     .cabecalho-fundo {
-        background: linear-gradient(45deg, white 50%, transparent 50%) calc(50% + 20px) bottom no-repeat, 
-        linear-gradient(-45deg, white 50%, transparent 50%) calc(50% - 20px) bottom no-repeat, 
+        background: linear-gradient(0deg, white 0%, transparent 0%) calc(50% + 20px) bottom no-repeat, 
+        linear-gradient(0deg, white 0%, transparent 0%) calc(50% - 20px) bottom no-repeat, 
         url(https://i.ibb.co/p3vppCK/Fundo.jpg);
         background-size: 40px 40px, 40px 40px, cover;
         min-height: 570px;
