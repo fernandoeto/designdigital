@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
 
 body {
-    margin:0;
+    margin: 0;
     background-color: #93C178;
     color: #fff;
     font-family: 'Roboto', sans-serif;
@@ -238,6 +238,16 @@ rodape li a:hover {
     font-family: sans-serif;
     color: #465C8B;
     margin-left: 10%;
+}
+
+.info-img-portrait {
+    width: 300px;
+    height: 400px;
+}
+
+.info-img-land {
+    width: 400px;
+    height: 300px;
 }
 
 @font-face {
