@@ -10,10 +10,10 @@ SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = 'sworfish'
 csrf.init_app(app)
 
-app.config['MAIL_SERVER']='smtp.office365.com'
-app.config['MAIL_PORT'] = 587
-app.config['MAIL_USERNAME'] = 'ciscorp@live.com'
-app.config['MAIL_PASSWORD'] = 'okXnG3cr'
+app.config['MAIL_SERVER']='smtp.gmail.com'
+app.config['MAIL_PORT'] = 465
+app.config['MAIL_USERNAME'] = 'ciscorp.tech@gmail.com'
+app.config['MAIL_PASSWORD'] = 'r!p2Pjedka'
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 
@@ -54,6 +54,7 @@ def send_message(message):
             body= message.get('message')
     )  
     mail.send(msg)
+    return 'Enviado!'
 
 if __name__ == "__main__":
     app.run(debug=True)

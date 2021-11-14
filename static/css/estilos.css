@@ -1,133 +1,3 @@
-@charset "UTF-8";
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
-
-body {
-    margin: 0;
-    background-color: #93C178;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-}
-
-p {
-    font-size: 14px;
-    line-height: 1.8;
-}
-
-rodape {
-    background-color: #242a2c;
-    color: #454e51;
-    padding: 3.6em 1.9em 2em;
-    text-align: left;
-}
-
-rodape p {
-    font-size: 13px;
-    line-height: 1.8;
-    margin: 0;
-    padding: 17px 0 0;
-}
-
-rodape ul {
-    list-style-type: none;
-    margin-top: 1.5em;
-    padding: 0;
-}
-
-rodape li a {
-    color: #454e51;
-    display: inline-block;
-    font-size: 13px;
-    font-weight: bold;
-    padding: .5em 0;
-    transition: all .5s;
-}
-
-rodape li a:hover {
-    color: #63c6ae;
-    text-decoration: none;
-}
-
-/* Tipografia */
-
-.conteudo p:nth-child(1) {
-	font-family: calibri;
-	font-weight: bold;
-	color: #DFDCE3;
-	font-size: 22px;
-}
-
-.conteudo p:nth-child(2) {
-	font-family: calibri;
-	font-weight: bold;
-	letter-spacing: 1px;
-	color: #DFDCE3;
-	font-size: 60px;
-}
-
-.conteudo p:nth-child(3) {
-	font-family: calibri;
-	color: #DFDCE3;
-	font-size: 30px;
-	line-height: 30px;
-}
-
-.conteudo {
-	line-height: 0px;
-	margin: 45px 0px 25px;
-    position: absolute;
-	left: 13%;
-	top: 42%;
-	transform: translate(-13%, -42%);
-}
-
-.conteudo button {
-	width: 130px;
-	height: 42px;
-	border-radius: 10px;
-	font-family: calibri;
-	font-weight: bold;
-	font-size: 14px;
-	outline: none;
-	margin: 0px 10px;
-}
-
-.conteudo-sobre {
-    top: 200px;
-	width: 35%;
-	height: 390px;
-	background-color: #ffffff;
-	border-radius: 20px;
-    justify-content: space-evenly;
-	box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
-	display: flex;
-	margin: -7% auto 20px auto;
-	position: relative;
-	margin-left: 600px;
-	align-items: center;
-}
-
-.cabecalho-fundo {
-    background: linear-gradient(0deg, white 0%, transparent 0%) calc(50% + 10px) bottom no-repeat,
-    linear-gradient(0deg, white 0%, transparent 0%) calc(50% - 10px) bottom no-repeat, 
-    url(https://i.ibb.co/p3vppCK/Fundo.jpg);
-    background-size: 20px 20px, 20px 20px, cover;
-    min-height: 350px;
-    min-width: 200px;
-    transition: all .5s;
-}
-
-.cabecalho-sobre {
-    background: linear-gradient(0deg, white 0%, transparent 0%) calc(50% + 10px) bottom no-repeat,
-    linear-gradient(0deg, white 0%, transparent 0%) calc(50% - 10px) bottom no-repeat, 
-    url(https://i.ibb.co/p3vppCK/Fundo.jpg);
-    background-size: 20px 20px, 20px 20px, cover;
-    margin-top: 134px;
-    min-height: 735px;
-    min-width: 200px;
-    transition: all .5s;
-}
-
 .side {
     max-height: 20rem;
     max-width: 20rem;
@@ -145,11 +15,11 @@ rodape li a:hover {
   }
 
 .picture-image {
-  display: block;
-  height: 100%;
-  left: 300%;
-  top: 65%;
-  width: 100%;
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 
 .texto-sobre {
@@ -176,65 +46,14 @@ rodape li a:hover {
 	font-size: 16px;
 }
 
-.cabecalho-logo {
-    background-color: #93C178;
-    max-width: 40%;
-    padding: 1.4em 0;
-    transition: all .5s;
-}
-
-.logotipo {
-    max-width: 60%;
-    max-height: 60%;
-}
-
-.fas.fa-bars {
-    color: #63c6ae;
-    font-size: 2em;
-    font-weight: 900;
-    position: absolute;
-    right: 1em;
-    top: .6em;
-}
-
-.top-nav-links a {
-    display: block;
-    font-size: 13px;
-    font-weight: bold;
-    padding: 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: all .5s;
-}
-
-.top-nav-links a:visited {
-    color: #586165;
-}
-
-.top-nav-links a:hover {
-    color: #DFDCE3;
-}
-
-.top-nav-links a.active {
-    color: #DFDCE3;
-}
-
-.texto-cabecalho {
-    color: #DFDCE3;
-    padding: 32px 5%;
-}
-
-.info-desc {
-    text-align: center;
-}
-
-#titulo {
+.titulo {
     font-family: sans-serif;
     color: #465C8B;
     margin-left: 7%;
+    align-content: center
 }
 
-#subtitulo {
+.subtitulo {
     font-family: sans-serif;
     color: #465C8B;
     margin-left: 10%;
@@ -250,308 +69,38 @@ rodape li a:hover {
     height: 300px;
 }
 
-@font-face {
-    font-family: fontAwesome;
-    src: url(https://use.fontawesome.com/releases/v5.8.1/css/all.css);
+body {
+    background-color: #93C178;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #465C8B;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
 }
 
-/* rodapé */
-a.ciscorp-lnk {
-    color: #454e51;
-    font-size: 14px;
-    font-weight: bold;
-    height: 100%;
-    text-transform: uppercase;
-    transition: all .5s;
+h1 {
+    text-align: left;
 }
 
-a.ciscorp-lnk:hover {
-    color: #63c6ae;
-    text-decoration: none;
+p {
+    text-align: left;
 }
 
-a.link-copyright {
-    color: #63c6ae;
-    transition: all .5s;
-}
-
-a.link-copyright:hover {
-    color: #454e51;
-    text-decoration: none;
-}
-
-p.direito {
-    text-align: center;
-}
-
-input[type=text] {
-    width: 30%;
-    padding: 10px 0px;
-    border: 1px solid #757575;
-    margin-right: -5px;  
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-}
-
-input[type=submit] {
-    width: 6%;
-    text-align: center;
-    background-color: #cd4d00;
-    color: #fff;
-    display: inline-block;
-    padding: 11px 0px;
-    margin: 0;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-    border-radius: 10px;
-}
-
-* {
-    margin:0;
-    padding: 0;
-}
-
-/* Exibe as mensagens de boas vindas */
-#ShowMsg {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0;
-    padding-top: 10px;
-}
-
-@media screen and (min-width: 320px) {
-
-    h1 {
-        padding: 22px 0;
-    }
-
-    .texto-cabecalho {
-        padding: 16% 5%;
+@media screen and (max-width: 799px) {
+    .side {
+      margin-bottom: 3rem;
+      width: 100%;
     }
 }
-
-@media screen and (min-width: 480px) {
-    
-    .fas.fa-quote-left, .fas.fa-quote-right {
-        font-size: 14px;
-    }
-    
-    .section-quotes q {
-        font-size: 18px;
-    }
-    
-    .section-quotes p {
-        font-size: 16px;
-    }
-
-    .cabecalho-logo {
-        width: 35%;
-    }
-}
-
-@media screen and (min-width: 642px) {
-
-    h1 {
-        font-size: 20px;
-    }
-
-    .cabecalho-logo {
-        width: 30%;
-    }
-
-    .rodape-flex {
-        display: flex;
-    }
-
-    a.ciscorp-lnk {
-        font-size: 20px;
-    }
-
-    .rodape-flex p {
-        padding: 0 1em;
-        width: 37%;
-    }
-
-    rodape ul {
-        margin: 0;
-    }
-
-    p.direito {
-        padding-top: 50px;
-    }
-}
-
-
-@media screen and (min-width: 770px) {
-
-    h1 {
-        font-size: 24px;
-        padding: 18px 0;
-    }
-
-    h2 {
-        font-size: 14px;
-        padding: 17px 0;
-        width: 50%;
-    }
-
-    .cabecalho-logo {
-        padding: 1.4em 0 1.6em;
-        width: 25%;
-    }
-
-    .logotipo {
-        padding: 3% 0 0;
-        transition: all .5s;
-    }
-    
-    .fas.fa-bars {
-        visibility: hidden;
-    }
-
-    .top-nav-links {
-        background-color: transparent;
-        display: block;
-        font-size: 14px;
-        margin-left: 25%;
-        margin-top: 0;
-        max-width: 75%;
-        padding: 2em 0 0 3em;
-        position: absolute;
-        text-align: left;
-        top: 0;
-    }
-
-    .top-nav-links a {
-        color: #586165;
-        display: inline-block;
-        font-size: 1em;
-        font-weight: bold;
-        padding: 0 1em;
-        transition: all .5s;
-    }
-
-    .top-nav-links a:hover {
-        color: #63c6ae;
-    }
-
-    .cabecalho-fundo {
-        min-height: 510px;
-    }
-
-    .texto-cabecalho {
-        display: inline-block;
-        margin-top: 16%;
-        padding: 0;
-        width: 86%;
-    }
-}
-
-@media screen and (min-width: 992px) {
-
-    h1 {
-        font-size: 28px;
-    }
-
-    h3 {
-        font-size: 18px;
-    }
-
-    .logotipo {
-        padding: 0;
-    }
-    
-    .cabecalho-fundo {
-        background: linear-gradient(0deg, white 0%, transparent 0%) calc(50% + 20px) bottom no-repeat, 
-        linear-gradient(0deg, white 0%, transparent 0%) calc(50% - 20px) bottom no-repeat, 
-        url(https://i.ibb.co/p3vppCK/Fundo.jpg);
-        background-size: 40px 40px, 40px 40px, cover;
-        min-height: 570px;
-    }
-    
-    .texto-cabecalho {
-        margin-top: 13%;
-    }
-}
-
-
-@media screen and (min-width: 1200px) {
-    
-    .texto-cabecalho {
-        margin-top: 12%;
-        width: 70%;
-    }
-    
-    .top-nav-links {
-        font-size: 16px;
-    }
-
-    /* Início do rodapé */
-    .rodape-flex {
-        margin: 45px auto;
-        padding: 0;
-        width: 1100px;
-    }
-
-    a.ciscorp-lnk {
-        font-size: 22px;
-        width: 16%;
-    }
-
-    .rodape-flex p {
-        font-size: 14px;
-        width: 41%;
-    }
-
-    .rodape-flex p:nth-child(3) {
-        width: 25%;
-    }
-
-    rodape ul {
-        margin: 0 2em;
-        width: 100%;
-    }
-
-    p.direito {
-        font-size: 14px;
-        padding-top: 50px;
-    }
-}
-
-@media screen and (min-width: 1400px) {
-    
-    .logotipo {
-        padding: 2% 0 2% 20%;
-    }
-
-    .cabecalho-fundo {
-        min-height: 735px;
-    }
-
-    .texto-cabecalho {
-        margin-top: 230px;
-        width: 75%;
-    }
-
-    h1 {
-        font-size: 30px;
-        max-width: 57%;
-        padding: 30px 0;
-    }
-
-    h2 {
-        font-size: 17px;
-        padding: 30px 0;
-        width: 47%;
-    }
-}
-
-@media screen and (min-width: 1650px) {
-    .texto-cabecalho {
-        width: 70%;
+  
+@media screen and (min-width: 800px) {
+    .side {
+      flex-grow: 0;
+      flex-shrink: 0;
+      height: 20rem;
+      margin-left: 4rem;
+      order: 2;
+      width: 20rem;
     }
 }
