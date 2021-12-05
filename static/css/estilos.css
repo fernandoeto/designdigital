@@ -22,53 +22,6 @@
     width: 100%;
 }
 
-.texto-sobre {
-	width: 400px;
-}
-
-.conteudo-sobre img {
-	height: 250px;
-}
-
-.texto-sobre p:nth-child(2) {
-	color: #3e3e3e;
-	font-size: 13px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: bold;
-	line-height: 5px;
-}
-
-.texto-sobre p:nth-child(3),
-
-.texto-sobre p:nth-child(4) {
-	color: #7e7d7d;
-	font-family: calibri;
-	font-size: 16px;
-}
-
-.titulo {
-    font-family: sans-serif;
-    color: #465C8B;
-    margin-left: 7%;
-    align-content: center
-}
-
-.subtitulo {
-    font-family: sans-serif;
-    color: #465C8B;
-    margin-left: 10%;
-}
-
-.info-img-portrait {
-    width: 300px;
-    height: 400px;
-}
-
-.info-img-land {
-    width: 400px;
-    height: 300px;
-}
-
 body {
     background-color: #93C178;
     font-family: sans-serif;
@@ -80,11 +33,21 @@ body {
 }
 
 h1 {
-    text-align: left;
+    text-align: center;
+}
+
+h2 {
+  color: #465C8B;
+  text-align: center;
+}
+
+h5 {
+  color: #465C8B;
+  text-align: center;
 }
 
 p {
-    text-align: left;
+    text-align: center;
 }
 
 @media screen and (max-width: 799px) {
@@ -103,4 +66,37 @@ p {
       order: 2;
       width: 20rem;
     }
+}
+
+.linha {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.coluna {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.coluna img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .coluna {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .coluna {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
