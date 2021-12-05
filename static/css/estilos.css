@@ -72,7 +72,6 @@ p {
   padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
 .coluna {
   flex: 25%;
   max-width: 25%;
@@ -80,8 +79,9 @@ p {
 }
 
 .coluna img {
+  display: block;
+  margin-left: 250px;
   margin-top: 8px;
-  vertical-align: middle;
   width: 100%;
 }
 
