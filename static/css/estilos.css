@@ -79,7 +79,7 @@ p {
 }
 
 .coluna img {
-  display: block;
+  vertical-align: middle;
   margin-left: 250px;
   margin-top: 8px;
   width: 100%;
