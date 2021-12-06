@@ -21,11 +21,11 @@ mail.init_app(app)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('home/index.html')
 
 @app.route('/sobre')
 def sobre():
-    return render_template('sobre.html')
+    return render_template('sobre/index.html')
 
 @app.route('/contato', methods=['POST', 'GET'])
 def contato():

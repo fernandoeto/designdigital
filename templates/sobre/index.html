@@ -1,0 +1,83 @@
+{% extends "sobre/main.html" %}
+
+{% block content %}
+
+<!-- Imagem de fundo -->
+<main>
+  <section>
+      <div
+            class="p-5 text-center bg-image"
+            style="
+            background-image: url('https://i.ibb.co/p3vppCK/Fundo.jpg');
+            height: 700px;
+            margin-top: 0px;
+            "
+        >
+      <div class="d-flex justify-content-left align-items-center h-100">
+          <div class="text-white">
+              <h1 class="mb-3">Sobre mim</h1>
+              <h4 class="mb-3">Engenheiro da Computação</h4>
+              <p>Olá, meu nome é Fernando. Sou bacharel em Engenharia da Computação. Hoje, sou estudante de graduação do
+                 curso de tecnologia em desenvolvimento de software multiplataforma na FATEC e também estou concluindo o
+                 curso de pós-graduação, especialização em desenvolvimento de software com metodologias ágeis na Universidade
+                 Anhembi Morumbi.</p>
+              <p>Desde 2004 exerci minha carreira na área de infraestrutura e suporte técnico de TI, atuando com atendimento a
+                 usuários, gerenciamento de incidentes e problemas, desenvolvendo trajetória em empresas nacionais e multinacionaisg
+                 de pequeno a grande porte.</p>
+          </div>
+
+          <aside class="side">
+              <figure id="picture" class="picture">
+                <div>
+                  <img id="pictureImage" class="picture-image"
+                    src="../../static/imagens/profile_sobre.JPG"
+                      alt="Retrato de Fernando Eto"
+                      width="320"
+                      height="320">
+                </div>
+              </figure>
+          </aside>
+      </div>
+  </section>
+</main>
+<!-- Imagem de fundo -->
+
+<hr>
+
+<br>
+<br>
+<div>
+  <h1>Galeria de fotografias</h1>
+  <h2><b>Família e experiência no exterior.</b></h2>
+  <h5>Sou casado há 13 anos, não tenho filhos. Tenho dois animais de estimação.<br>Morei durante 3 anos e meio no Japão com minha esposa Priscila. Durante esse período tive a oportunidade de morar, trabalhar e conhecer uma nova cultura.</h5>
+</div>
+<br>
+<br>
+
+<hr>
+
+<div class="linha">
+  <div class="coluna">
+    <img src="../../static/imagens/profile_sobre.JPG">
+  </div>
+  <div class="coluna">
+    <img src="../../static/imagens/shiro.jpg">
+  </div>
+  <div class="coluna">
+    <img src="../../static/imagens/thierry_2.jpeg">
+  </div>
+</div>
+
+<div class="linha">
+  <div class="coluna">
+    <img src="../../static/imagens/esposa_familia.jpg">
+  </div>
+  <div class="coluna">
+    <img src="../../static/imagens/japao_okazaki.JPG">
+  </div>
+  <div class="coluna">
+    <img src="../../static/imagens/thierry_3.jpeg">
+  </div>
+</div>
+
+{% endblock %}

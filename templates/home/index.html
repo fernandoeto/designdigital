@@ -1,0 +1,41 @@
+{% extends "home/main.html" %}
+
+{% block content %}
+
+<!-- Imagem de fundo -->
+<main>
+  <section>
+      <div
+          class="p-5 text-center bg-image"
+          style="
+          background-image: url('https://i.ibb.co/p3vppCK/Fundo.jpg');
+          height: 700px;
+          margin-top: 10px;
+          "
+      >
+      <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white">
+              <h1 class="mb-3">Olá, sejam bem-vindos!</h1>
+              <h4 class="mb-3">Eu sou Fernando</h4>
+              <h5 class="mb-3">Engenheiro da Computação</h5>
+              <p class="mb-3">Estudante de Pós-Graduação, especialização em desenvolvimento de software com<br></p>
+              <p class="mb-3">metodologias ágeis e tecnologia em desenvolvimento de software multiplataforma</p>
+          </div>
+
+          <aside class="side">
+              <figure id="picture" class="picture">
+                <div>
+                  <img id="pictureImage" class="picture-image"
+                    src="../../static/imagens/profile_home.JPG"
+                      alt="Retrato de Fernando Eto"
+                      width="320"
+                      height="320">
+                </div>
+              </figure>
+          </aside>
+      </div>
+  </section>
+</main>
+<!-- Imagem de fundo -->
+
+{% endblock %}
